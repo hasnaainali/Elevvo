@@ -1,0 +1,227 @@
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  width: 320px;
+  padding: 14px;
+  position: relative;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, .14);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+
+.dark-mode .delete-btn {
+  background: #333;   
+  color: #fff;       
+  border-color: #626237;
+}
+
+.dark-mode .delete-btn:hover {
+  background: #555;
+  color: #fff;
+}
+
+.delete-btn:hover::after {
+  content: "Delete this city";
+  position: absolute;
+  right: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 3000;
+}
+
+.confirm-box {
+  background: var(--card);
+  color: var(--text);
+  padding: 18px;
+  border-radius: 10px;
+  min-width: 260px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.confirm-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.confirm-yes {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-no {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  flex: 1;
+}
+
+.city {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.wicon {
+  width: 64px;
+  height: 64px;
+  animation: float 2.5s ease-in-out infinite;
+  z-index: 1;
+  position: relative;
+  margin-top: 10px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-6px) }
+}
+
+.weather-icon-block {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.desc-badge {
+  text-transform: capitalize;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+.desc-badge.clear {
+  background: #fdd835;
+  color: #333;
+}
+
+.desc-badge.rain,
+.desc-badge.drizzle,
+.desc-badge.thunderstorm {
+  background: #fdd835;
+  color: #333;
+}
+
+.desc-badge.clouds {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.today {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  height: 90px;
+}
+
+.meta .stat {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.toggle-forecast {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+
+.toggle-forecast:hover {
+  transform: translateY(-1px);
+}
+
+.forecast3 {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}

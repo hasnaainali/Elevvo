@@ -1,0 +1,32 @@
+.fcard {
+  background: linear-gradient(180deg, rgba(255,204,0,.18), transparent 60%), var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.fhead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.fday { font-weight: 800; }
+.fdate { color: var(--muted); font-size: 0.9rem; }
+
+.fmain {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ficon { width: 42px; height: 42px; }
+.ftemp { font-weight: 800; font-size: 1.1rem; }
+
+.fdesc {
+  margin-top: 6px;
+  text-transform: capitalize;
+}
+.fpop {
+  margin-top: 4px;
+  font-weight: 600;
+}
