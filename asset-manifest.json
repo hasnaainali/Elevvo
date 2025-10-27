@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Elevvo/taskflow-app/static/css/main.38e1e6bd.css",
-    "main.js": "/Elevvo/taskflow-app/static/js/main.3a42792c.js",
-    "index.html": "/Elevvo/taskflow-app/index.html",
-    "main.38e1e6bd.css.map": "/Elevvo/taskflow-app/static/css/main.38e1e6bd.css.map",
-    "main.3a42792c.js.map": "/Elevvo/taskflow-app/static/js/main.3a42792c.js.map"
+    "main.css": "/Elevvo/weather-dashboard/static/css/main.1408cbd0.css",
+    "main.js": "/Elevvo/weather-dashboard/static/js/main.5a631797.js",
+    "index.html": "/Elevvo/weather-dashboard/index.html",
+    "main.1408cbd0.css.map": "/Elevvo/weather-dashboard/static/css/main.1408cbd0.css.map",
+    "main.5a631797.js.map": "/Elevvo/weather-dashboard/static/js/main.5a631797.js.map"
   },
   "entrypoints": [
-    "static/css/main.38e1e6bd.css",
-    "static/js/main.3a42792c.js"
+    "static/css/main.1408cbd0.css",
+    "static/js/main.5a631797.js"
   ]
 }
