@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Elevvo/weather-dashboard/static/css/main.1408cbd0.css",
-    "main.js": "/Elevvo/weather-dashboard/static/js/main.5a631797.js",
-    "index.html": "/Elevvo/weather-dashboard/index.html",
-    "main.1408cbd0.css.map": "/Elevvo/weather-dashboard/static/css/main.1408cbd0.css.map",
-    "main.5a631797.js.map": "/Elevvo/weather-dashboard/static/js/main.5a631797.js.map"
+    "main.css": "/Elevvo/personal-blog/static/css/main.dca21021.css",
+    "main.js": "/Elevvo/personal-blog/static/js/main.b25e9cef.js",
+    "index.html": "/Elevvo/personal-blog/index.html",
+    "main.dca21021.css.map": "/Elevvo/personal-blog/static/css/main.dca21021.css.map",
+    "main.b25e9cef.js.map": "/Elevvo/personal-blog/static/js/main.b25e9cef.js.map"
   },
   "entrypoints": [
-    "static/css/main.1408cbd0.css",
-    "static/js/main.5a631797.js"
+    "static/css/main.dca21021.css",
+    "static/js/main.b25e9cef.js"
   ]
 }
